@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar className="primaryBackground" type="dark" expand="md">
-          <NavbarBrand href="#">FCC Random Quote Machine</NavbarBrand>
+          <NavbarBrand href="#">Random Quote Machine</NavbarBrand>
         </Navbar>
         <div className="App-header">
           {this.state.showComponent ? <CardExport /> : null}
