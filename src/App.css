@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh !important;
 }
 
 .App-logo {
@@ -7,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #347474 !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,4 +20,30 @@
 
 .App-link {
   color: #09d3ac;
+}
+.buttonAlign {
+  margin-top: 100px;
+  text-align: center !important;
+  background-color: #35495e;
+  border: none;
+}
+.primaryBackground {
+  background-color: #42b883 !important;
+}
+.secondaryBackground {
+  background-color: #347474 !important;
+}
+.thirdBackground {
+  background-color: #347474;
+}
+.fourthBackground {
+  background-color: #347474;
+}
+.text {
+  color: #ff7e67;
+}
+.card {
+  width: 90%;
+  font-display: text-center;
+  display: inline-block;
 }

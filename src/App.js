@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Navbar, NavbarBrand, Button } from "shards-react";
+import CardExport from "./Card";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    //Variables and Data
+    this.state = {
+      showComponent: false,
+      randomNumber: 0
+    };
+    //Functions
+    this._ShowCardComponent = this._ShowCardComponent.bind(this);
+  }
+
+  _ShowCardComponent() {
+    this.setState(state => {
+      if (state.showComponent === true || state.showComponent === false) {
+        //this.randomNumber = Math.floor(Math.random() * Math.floor(3));
+        return { showComponent: true };
+      } else {
+        return { showComponent: true };
+      }
+    });
+  }
+  render() {
+    return (
+      <div className="App">
+        <Navbar className="primaryBackground" type="dark" expand="md">
+          <NavbarBrand href="#">FCC Random Quote Machine</NavbarBrand>
+        </Navbar>
+        <div className="App-header">
+          {this.state.showComponent ? <CardExport /> : null}
+          <Button
+            onClick={this._ShowCardComponent}
+            size="lg"
+            pill
+            className="buttonAlign"
+          >
+            Hit me!
+          </Button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
+//https://colorhunt.co/palette/158293
