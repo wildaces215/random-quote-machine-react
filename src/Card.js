@@ -6,7 +6,7 @@ class CardExport extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      randomNumber: Math.floor(Math.random() * (10 - 0 + 1)) + 0,
+      randomNumber: Math.floor(Math.random() * 11),
       checkNumber: 0,
       quotes: [
         "You know what’s better than building things up in your imagination? Building things up in real life.",
@@ -39,7 +39,7 @@ class CardExport extends Component {
 
   componentDidUpdate() {
     this.state.randomNumber = this.state.checkNumber;
-    this.state.randomNumber = Math.floor(Math.random() * (10 - 0 + 1)) + 0;
+    this.state.randomNumber = Math.floor(Math.random() * 11);
 
     console.log(this.state.randomNumber);
   }

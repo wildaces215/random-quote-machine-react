@@ -36,7 +36,7 @@ class App extends Component {
             onClick={this._ShowCardComponent}
             size="lg"
             pill
-            className="buttonAlign"
+            className="buttonAlign buttonColor"
           >
             Hit me!
           </Button>
