@@ -18,7 +18,6 @@ class App extends Component {
   _ShowCardComponent() {
     this.setState(state => {
       if (state.showComponent === true || state.showComponent === false) {
-        //this.randomNumber = Math.floor(Math.random() * Math.floor(3));
         return { showComponent: true };
       } else {
         return { showComponent: true };

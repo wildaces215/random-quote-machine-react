@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh !important;
+  background-color: #b3cde0 !important;
 }
 
 .App-logo {
@@ -8,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #347474 !important;
+  background-color: #b3cde0 !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,19 +29,11 @@
   border: none;
 }
 .primaryBackground {
-  background-color: #42b883 !important;
+  background-color: #6497b1 !important;
 }
-.secondaryBackground {
-  background-color: #347474 !important;
-}
-.thirdBackground {
-  background-color: #347474;
-}
-.fourthBackground {
-  background-color: #347474;
-}
+
 .text {
-  color: #ff7e67;
+  color: #005b96;
 }
 .card {
   width: 90%;
